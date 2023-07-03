@@ -1,0 +1,47 @@
+
+/*  Formatação do corpo  */
+body {
+    background-color: #000;
+    padding-left: 100px;
+}
+ /* Formatação da div primeiro N  */
+div {
+   margin: 400px;
+   width: 50px;
+   height: 250px;
+   background: #b20710;
+   position: relative;
+}
+ /* div before segunda parte do N */
+div::before {
+    justify-content: center;
+    align-items: center;
+    content: " ";
+    width: 50px;
+    height: 250px;
+    background: #b20710;
+    position: absolute;
+    left: 90px;
+ }
+/* continuação da segunda parte da div N */
+ div::after {
+    content: "";
+    width: 175px;
+    height: 20px;
+    background: #000;
+    position: absolute;
+    bottom: -10px;
+    left: -15px;
+    border-radius: 50%;
+ }
+ /* Formtação letra do meio do N */
+ span {
+    width: 50px;
+    height: 250px;
+    background: #e50914;
+    position: absolute;
+    left: 46px;
+    transform: skew(20deg);
+    box-shadow: 0 0 10px -4px #000;
+ }
+
